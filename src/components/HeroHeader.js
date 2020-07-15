@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import Button from "./Button";
+import { breakpoint } from "../helpers/mediaQueries";
 
 const Header = styled.div`
   margin-top: 52px;
@@ -14,6 +16,9 @@ const HeaderContent = styled.div`
   padding: 20px 10px;
   margin: 0px auto;
   display: flex;
+  @media${breakpoint.md}{
+display: block;
+  }
   > * {
     flex: 1;
     margin-bottom: 30px;
@@ -37,7 +42,11 @@ font-size: 20px;
 
 const ButtonContainer = styled.div`
 display: flex;
+justify-content: center;
 margin-top: 20px;
+@media${breakpoint.md}{
+justify-content: space-around;
+}
 `;
 
 const HeroHeader = () => {
@@ -51,8 +60,8 @@ const HeroHeader = () => {
               Student 3 roku informatyki o specjalizacji aplikacje mobilne i webowe aspirujący na stanowisko Frontend Developera.Samouk, ciągle rozwijający się.
             </Paragraph>
             <ButtonContainer>
-              <button>Contact me</button>
-              <button>See my github</button>
+              <Button>Contact me</Button>
+              <Button>See my github</Button>
             </ButtonContainer>
           </div>
         </div>
