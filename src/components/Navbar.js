@@ -1,5 +1,7 @@
-import React from "react";
+import React,{ useState } from "react";
 import styled from "styled-components";
+import Hamburger from "./Hamburger";
+import { breakpoint } from "../helpers/mediaQueries";
 
 const Navbar = styled.header`
 background-color: #fff;
@@ -17,6 +19,19 @@ list-style: none;
 overflow: hidden;
 display: flex;
 justify-content: flex-end;
+transition: all 0.4s;
+@media${breakpoint.md}{
+  flex-direction: column;
+  width: 200px;
+  position: fixed;
+  justify-content: flex-start;
+  transform: ${props => props.open ? "translateX(0)" : "translateX(100%)"};
+  top: 0px;
+  padding-top: 52px;
+  right: 0px;
+  height: calc(100vh - 52px);
+  transition: transform 0.4s ease;
+}
 li a{
     display: block;
     padding: 10px;
@@ -38,12 +53,14 @@ text-decoration: none;
 `;
 
 const Header = () => {
+  const [ open, setOpen ] = useState(false);
   return (
       <Navbar>
         <Logo href="#">
          Kacper Berg
         </Logo>
-        <Menu>
+        <Hamburger open={open} setOpen={setOpen}/>
+        <Menu open={open}>
         <li>
             <a href="#about">About Me</a>
           </li>
