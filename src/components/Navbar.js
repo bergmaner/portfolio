@@ -4,6 +4,9 @@ import Hamburger from "./Hamburger";
 import { breakpoint } from "../helpers/mediaQueries";
 
 const Navbar = styled.header`
+position: fixed;
+box-sizing: border-box;
+width: 100%;
 background-color: #fff;
 max-width: 100%;
 padding: 10px 20px;
@@ -19,7 +22,7 @@ list-style: none;
 overflow: hidden;
 display: flex;
 justify-content: flex-end;
-transition: all 0.4s;
+background: #fff;
 @media${breakpoint.md}{
   flex-direction: column;
   width: 200px;
@@ -37,7 +40,6 @@ li a{
     padding: 10px;
     color: black;
     text-decoration: none;
-    transition: all 0.4s;
     border-radius: 20px;
   }
   li a:hover{
@@ -57,7 +59,7 @@ const Header = () => {
   return (
       <Navbar>
         <Logo href="#">
-         Kacper Berg
+         Portfolio
         </Logo>
         <Hamburger open={open} setOpen={setOpen}/>
         <Menu open={open}>
