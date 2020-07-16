@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from "./components/Navbar";
 import HeroHeader from "./components/HeroHeader";
+import Skills from './components/Skills';
 import './App.css';
 
 const App = () => {
@@ -8,6 +9,8 @@ const App = () => {
     <div className="App">
       <Navbar/>
       <HeroHeader/>
+      <Skills/>
+      jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
     </div>
   );
 }

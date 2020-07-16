@@ -4,17 +4,11 @@ import Button from "./Button";
 import { breakpoint } from "../helpers/mediaQueries";
 
 const Header = styled.div`
+  width: 100%;
+  box-sizing: border-box;
+  padding: 40px 20px;
+  border-bottom: #F3F3F3 3px solid;
   margin-top: 52px;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 20px 10px;
-`;
-
-const HeaderContent = styled.div`
-  width: 100%;
-  box-sizing: border-box;
-  padding: 20px 10px;
-  margin: 0px auto;
   display: flex;
   @media${breakpoint.md}{
 display: block;
@@ -38,6 +32,7 @@ const ImageContainer = styled.div`
 const Paragraph = styled.p`
 text-align: left;
 font-size: 20px;
+padding: 0px 30px;
 `;
 
 const ButtonContainer = styled.div`
@@ -51,8 +46,7 @@ justify-content: space-around;
 
 const HeroHeader = () => {
   return (
-    <Header>
-      <HeaderContent>
+    <Header id="about">
         <div>
           <div>
             <h1>Kacper Berg</h1>
@@ -68,7 +62,6 @@ const HeroHeader = () => {
         <ImageContainer>
           <img alt="" src={require("../assets/images/avatar.svg")}></img>
         </ImageContainer>
-      </HeaderContent>
     </Header>
   );
 };
