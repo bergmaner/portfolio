@@ -44,14 +44,19 @@ export const skills = [
         color: "#CC3534",
       },
       {
-        name: "Firebase",
-        icon: <Image src={require("../assets/images/firebase.svg")}/>,
-      },
-      {
         name: "Gatsby",
         icon: < GrGatsbyjs/>,
         color:"#663399"
       },
+      {
+        name: "Firebase",
+        icon: <Image src={require("../assets/images/firebase.svg")}/>,
+      },
+      {
+        name: "Redux",
+        icon: <Image src={require("../assets/images/redux.svg")}/>,
+      },
+      
      
 
       

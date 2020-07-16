@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from "./components/Navbar";
 import HeroHeader from "./components/HeroHeader";
 import Skills from './components/Skills';
+import Projects from './components/Projects';
 import './App.css';
 
 const App = () => {
@@ -10,7 +11,7 @@ const App = () => {
       <Navbar/>
       <HeroHeader/>
       <Skills/>
-      jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+      <Projects/>
     </div>
   );
 }
