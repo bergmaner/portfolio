@@ -4,39 +4,26 @@ import { ButtonColor } from "../helpers/theme";
 import { breakpoint } from "../helpers/mediaQueries";
 
 const MainButton = styled.a`
-background-color: #ffffff;
-border: solid 1px ${props => props.primary};
-color: black;
+background-color: ${props => props.primary};
+color: white;
 font-weight: 700;
 width: max-content;
-padding: 13px 22px;
-
+padding: 6px 11px;
+margin: 0px 20px;
 text-transform: uppercase;
-border-radius: 6px;
+border-radius: 10px;
 text-align: center;
 text-decoration: none;
 display: block;
-margin-top: 20px;
-margin-right: 50px;
 font-size: 12px;
 cursor: pointer;
 transition: all .3s ease-in-out 0s;
-@media${breakpoint.md}{
-    font-size: 15px;
-    padding: 12px 18px;
-    margin-right: 0px;
-}
-@media${breakpoint.sm}{
-    font-size: 13px;
-    padding: 9px 12px;
-}
-:hover{
-    background-color: ${props => props.primary};
-    color: white;
+: hover{
+    filter: contrast(200%);
 }
 `;
 
-const Button = ({ children, path, newTab }) => {
+const ProjectButton = ({ children, path, newTab }) => {
   return (
     <div>
       <MainButton primary = {ButtonColor} href={path} target={newTab && "_blank"}>
@@ -45,4 +32,4 @@ const Button = ({ children, path, newTab }) => {
     </div>
   );
 }
-export default Button;
+export default ProjectButton;

@@ -5,6 +5,7 @@ import { breakpoint } from "../helpers/mediaQueries";
 
 const Navbar = styled.header`
 position: fixed;
+z-index: 2;
 box-sizing: border-box;
 width: 100%;
 background-color: #fff;
