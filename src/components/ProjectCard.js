@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import translate from "../providers/i18n/translate";
 import ProjectButton from "./ProjectButton";
 import { breakpoint } from "../helpers/mediaQueries";
 
@@ -102,7 +103,7 @@ const ProjectCard = ({ title, description, path }) => {
       <Content>
         <div>
           <h3>{title}</h3>
-          <p>{description}</p>
+          <p>{translate(description)}</p>
           <ButtonContainer>
             <ProjectButton>Live</ProjectButton>
             <ProjectButton>Github</ProjectButton>

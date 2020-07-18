@@ -35,7 +35,7 @@ const Projects = () => {
     <Container>
       <Header>My Projects</Header>
       <CardsContainer>
-       {projects.map((project)=><ProjectCard title={project.title} description={project.description} path={project.image}/>)}
+       {projects.map((project)=><ProjectCard title={project.title} description={project?.description} path={project.image}/>)}
       </CardsContainer>
     </Container>
   );

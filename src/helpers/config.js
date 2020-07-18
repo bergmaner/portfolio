@@ -70,25 +70,22 @@ export const skills = [
 export const projects = [
   {
     title: "LearnEnglish",
-    description:
-      "Jest to strona internetowa pozwalająca na naukę języka angielskiego poprzez ćwiczenia praktycznie odpowiednio dostosowane do poziomu użytkownika.Strona została wykonana za pomocą Firebase, Reacta, Redux Toolkit, React Spring",
+    description: "learnEnglish_description",
     image: require("../assets/images/LearnEnglish.png"),
   },
   {
     title: "MovieFinder",
-    description:
-      "Jest to strona internetowa pozwalająca na wyszukiwanie informacji o filmach i osobami związanymi z ich produkcją.Do tworzenia aplikacji wykorzystałem Reacta i oparłem to na hookach.Korzystałem także z ogólnodostępnego tmdbAPI.",
+    description: "movieFinder_description",
     image: require("../assets/images/MovieFinder.png"),
   },
   {
     title: "Tetris",
-    description:
-      "Jest to moja wersja kultowej gry Tetris.Gra jest wykonana za pomocą hooków.Strona nie jest responsywna.",
+    description: "tetris_description",
     image: require("../assets/images/Tetris.png"),
   },
   {
     title: "Portfolio",
-    description: "Moje Portfolio zostało wykonane w Reactcie za pomocą hooków ",
+    description: "portfolio_description",
     image: require("../assets/images/Portfolio.png"),
   },
 ];
