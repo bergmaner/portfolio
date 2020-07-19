@@ -1,5 +1,5 @@
-import {LOCALES} from '../i18n/locales';
+import { LOCALES } from "../i18n/locales";
 
 export default {
-	lang: LOCALES.POLISH,
+  lang: LOCALES.POLISH,
 };

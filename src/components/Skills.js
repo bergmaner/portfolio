@@ -50,8 +50,8 @@ const Skills = () => {
         <Describe>{translate("skills_description")}</Describe>
         <div>
           <SkillsIcons>
-            {skills.map((skill) => (
-                <Skill>
+            {skills.map((skill, id) => (
+                <Skill key={id}>
                 <SkillIcon color = {skill.color} background={skill.background}>{skill.icon}</SkillIcon>
                   <SkillName>{skill.name}</SkillName>
                 </Skill>

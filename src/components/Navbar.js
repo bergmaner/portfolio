@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import Hamburger from "./Hamburger";
+import LanguageSwitcher from "./LanguageSwitcher";
 import translate from "../providers/i18n/translate";
 import { menuOptions } from "../helpers/config";
 import { breakpoint } from "../helpers/mediaQueries";
@@ -64,11 +65,12 @@ const Header = () => {
       <Logo href="#">Portfolio</Logo>
       <Hamburger open={open} setOpen={setOpen} />
       <Menu open={open}>
-        {menuOptions.map((item) => (
-          <li>
+        {menuOptions.map((item, id) => (
+          <li key={id}>
             <a href={item.content}>{translate(item.content)}</a>
           </li>
         ))}
+        <LanguageSwitcher/>
       </Menu>
     </Navbar>
   );

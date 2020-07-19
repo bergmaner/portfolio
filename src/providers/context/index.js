@@ -1,4 +1,4 @@
-import React, {useReducer, createContext} from 'react';
+import React, { useReducer, createContext } from "react";
 import defaultContext from "./defaultContext";
 
 const AppContext = createContext();
@@ -6,11 +6,11 @@ const AppContext = createContext();
 let reducer = (state, action) => {
   switch (action.type) {
     case "SETLANG":
-      return {...state, lang: action.payload};
+      return { ...state, lang: action.payload };
   }
 };
 
-const AppContextProvider = props => {
+const AppContextProvider = (props) => {
   const [state, dispatch] = useReducer(reducer, defaultContext);
   const value = { state, dispatch };
 
