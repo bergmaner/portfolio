@@ -19,7 +19,7 @@ font-size: 12px;
 cursor: pointer;
 transition: all .3s ease-in-out 0s;
 : hover{
-    filter: contrast(200%);
+    filter: brightness(90%);
 }
 `;
 

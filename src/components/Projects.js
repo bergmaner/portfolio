@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import ProjectCard from "./ProjectCard";
+import translate from "../providers/i18n/translate";
 import { projects } from "../helpers/config";
 import { breakpoint } from "../helpers/mediaQueries";
 
@@ -33,7 +34,7 @@ const CardsContainer = styled.div`
 const Projects = () => {
   return (
     <Container>
-      <Header>My Projects</Header>
+      <Header>{translate("projects_header")}</Header>
       <CardsContainer>
        {projects.map((project)=><ProjectCard title={project.title} description={project?.description} path={project.image}/>)}
       </CardsContainer>

@@ -1,19 +1,21 @@
-import React,{ useState } from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import Hamburger from "./Hamburger";
+import translate from "../providers/i18n/translate";
+import { menuOptions } from "../helpers/config";
 import { breakpoint } from "../helpers/mediaQueries";
 
 const Navbar = styled.header`
-position: fixed;
-z-index: 2;
-box-sizing: border-box;
-width: 100%;
-background-color: #fff;
-max-width: 100%;
-padding: 10px 20px;
-margin: 0px auto;
-display: flex;
-justify-content: space-between;
+  position: fixed;
+  z-index: 2;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #fff;
+  max-width: 100%;
+  padding: 10px 20px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
 `;
 
 const Menu = styled.ul`
@@ -29,7 +31,7 @@ background: #fff;
   width: 200px;
   position: fixed;
   justify-content: flex-start;
-  transform: ${props => props.open ? "translateX(0)" : "translateX(100%)"};
+  transform: ${(props) => (props.open ? "translateX(0)" : "translateX(100%)")};
   top: 0px;
   padding-top: 52px;
   right: 0px;
@@ -49,35 +51,26 @@ li a{
 `;
 
 const Logo = styled.a`
-display: inline-block;
-color: #000;
-font-size: 1.5em;
-text-decoration: none;
+  display: inline-block;
+  color: #000;
+  font-size: 1.5em;
+  text-decoration: none;
 `;
 
 const Header = () => {
-  const [ open, setOpen ] = useState(false);
+  const [open, setOpen] = useState(false);
   return (
-      <Navbar>
-        <Logo href="#">
-         Portfolio
-        </Logo>
-        <Hamburger open={open} setOpen={setOpen}/>
-        <Menu open={open}>
-        <li>
-            <a href="#about">About Me</a>
-          </li>
+    <Navbar>
+      <Logo href="#">Portfolio</Logo>
+      <Hamburger open={open} setOpen={setOpen} />
+      <Menu open={open}>
+        {menuOptions.map((item) => (
           <li>
-            <a href="#skills">Skills</a>
+            <a href={item.content}>{translate(item.content)}</a>
           </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </Menu>
-      </Navbar>
+        ))}
+      </Menu>
+    </Navbar>
   );
-}
+};
 export default Header;

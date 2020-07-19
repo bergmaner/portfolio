@@ -16,6 +16,13 @@ const Image = styled.img`
   height: 48px;
 `;
 
+export const menuOptions = [
+  { content: "#about" },
+  { content: "#skills" },
+  { content: "#projects" },
+  { content: "#contact" },
+];
+
 export const skills = [
   {
     name: "HTML5",

@@ -7,6 +7,14 @@ export default {
         "tetris_description" : "This is my version of iconic game Tetris. Game was created in Hooks. This website isn't responsive",
         "portfolio_description" : "My portfolio is multilingual, was made in React, Hooks API.",
         "skills_description": "Technology stack, which I use: ",
-        "my_decription" : "I am a 3rd year IT student with major in Mobile and Web apps. I aspire to be Frontend Developer. I am selfmade,but still learning."
+        "my_description" : "I am a 3rd year IT student with major in Mobile and Web apps. I aspire to be Frontend Developer. I am selfmade,but still learning.",
+        "#about" : "About me", 
+        "#skills" : "Skills",
+        "#projects" : "Projects",
+        "#contact" : "Contact",
+        "skills_header" : "My Skills",
+        "projects_header" : "My Projects",
+        "button_github" : "See my Github",
+        "button_contact" : "Contact me",
     }
 }

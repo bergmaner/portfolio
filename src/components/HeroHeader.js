@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Button from "./Button";
+import translate from "../providers/i18n/translate";
 import { breakpoint } from "../helpers/mediaQueries";
 
 const Header = styled.div`
@@ -51,11 +52,11 @@ const HeroHeader = () => {
           <div>
             <h1>Kacper Berg</h1>
             <Paragraph>
-              Student 3 roku informatyki o specjalizacji aplikacje mobilne i webowe aspirujący na stanowisko Frontend Developera.Samouk, ciągle rozwijający się.
+              {translate("my_description")}
             </Paragraph>
             <ButtonContainer>
-              <Button>Contact me</Button>
-              <Button>See my github</Button>
+              <Button>{translate("button_contact")}</Button>
+              <Button>{translate("button_github")}</Button>
             </ButtonContainer>
           </div>
         </div>

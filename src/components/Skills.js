@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import translate from "../providers/i18n/translate";
 import { skills } from "../helpers/config";
 
 const Header = styled.h1`
@@ -45,8 +46,8 @@ border-bottom: #F3F3F3 3px solid;
 const Skills = () => {
   return (
       <Container id= "skills">
-        <Header>My Skills</Header>
-        <Describe>Stack technologiczny, który obecnie poznałem</Describe>
+        <Header>{translate("skills_header")}</Header>
+        <Describe>{translate("skills_description")}</Describe>
         <div>
           <SkillsIcons>
             {skills.map((skill) => (
