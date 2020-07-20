@@ -8,13 +8,16 @@ export default {
         "portfolio_description" : "My portfolio is multilingual, was made in React, Hooks API.",
         "skills_description": "Technology stack, which I use: ",
         "my_description" : "I am a 3rd year IT student with major in Mobile and Web apps. I aspire to be Frontend Developer. I am selfmade,but still learning.",
+        "contact_description" : "ie, jeśli spodobały ci się moje projekty zapraszam do kontaktu.",
         "#about" : "About me", 
         "#skills" : "Skills",
         "#projects" : "Projects",
         "#contact" : "Contact",
         "skills_header" : "My Skills",
         "projects_header" : "My Projects",
+        "contact_header" : "Contact with me",
         "button_github" : "See my Github",
         "button_contact" : "Contact me",
+        
     }
 }

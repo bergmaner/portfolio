@@ -8,13 +8,16 @@ export default {
       "portfolio_description" : "Moje Portfolio zostało wykonane w Reactcie za pomocą hooków ",
       "my_description" : "Student 3 roku informatyki o specjalizacji aplikacje mobilne i webowe aspirujący na stanowisko Frontend Developera. Samouk, ciągle rozwijający się.",
       "skills_description" : "Stack technologiczny, który obecnie poznałem",
+      "contact_description" : "Obecnie szukam pierwszej pracy lub praktyki w zawodzie, jeśli spodobały ci się moje projekty zapraszam do kontaktu.",
       "#about" : "O mnie", 
       "#skills" : "Umiejętności",
       "#projects" : "Projekty",
       "#contact" : "Kontakt",
       "skills_header" : "Moje Umięjetności",
       "projects_header" : "Moje Projekty",
+      "contact_header" : "Skontaktuj się ze mną",
       "button_github" : "Zobacz mój Github",
       "button_contact" : "Skontaktuj się ze mną",
+      
     },
 };

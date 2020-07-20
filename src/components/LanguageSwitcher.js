@@ -15,11 +15,6 @@ const Language = styled.span`
   color: ${props=>props.active ? "#fff" : "#000"};
   border-radius: ${props=>props.active ? "20px" : "0px"};
   cursor: ${props=>props.active ? "default" : "pointer"};
-  :hover {
-    background: #000;
-    color: #fff;
-    border-radius: 20px;
-  }
 `;
 
 const LanguageSwitcher = () => {

@@ -2,12 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import ContactForms from "./ContactForms";
 import { breakpoint } from "../helpers/mediaQueries";
+import translate from "../providers/i18n/translate";
 
 const Container = styled.div`
   padding: 40px 20px;
   box-sizing: border-box;
   width: 100%;
-  border-bottom: #f3f3f3 3px solid;
   display: flex;
   @media${breakpoint.sm}{
       flex-direction: column;
@@ -43,11 +43,8 @@ const Contact = () => {
   return (
     <Container id="contact">
       <Information>
-        <h1>Skontaktuj się ze mną</h1>{" "}
-        <Paragraph>
-          Obecnie szukam pierwszej pracy lub praktyki w zawodzie, jeśli
-          spodobały ci się moje projekty zapraszam do kontaktu.
-        </Paragraph>
+        <h1>{translate("contact_header")}</h1>{" "}
+  <Paragraph>{translate("contact_description")}</Paragraph>
         <ContactForms />
       </Information>
       <ImageContainer>
