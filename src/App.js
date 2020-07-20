@@ -7,7 +7,6 @@ import HeroHeader from "./components/HeroHeader";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-import "./App.css";
 
 const Content = styled.div`
 text-align: center;

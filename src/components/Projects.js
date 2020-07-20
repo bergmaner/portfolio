@@ -8,12 +8,18 @@ import { breakpoint } from "../helpers/mediaQueries";
 const Container = styled.div`
 padding: 40px 20px;
 border-bottom: #F3F3F3 3px solid;
+@media${breakpoint.xs}{
+  padding: 40px 0px;
+}
 `;
 
 const Header = styled.h1`
   font-size: 56px;
   font-weight: 400;
   margin-top: 0px;
+  @media${breakpoint.sm}{
+    font-size: 30px;
+  }
 `;
 
 const CardsContainer = styled.div`

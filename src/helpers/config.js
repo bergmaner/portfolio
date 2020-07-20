@@ -8,7 +8,10 @@ import {
   FaReact,
   FaGitAlt,
   FaNpm,
+  FaPhoneAlt,
+  FaDiscord
 } from "react-icons/fa";
+import { GrMail } from "react-icons/gr";
 import { GrGatsbyjs } from "react-icons/gr";
 
 const Image = styled.img`
@@ -72,6 +75,28 @@ export const skills = [
     name: "Redux",
     icon: <Image src={require("../assets/images/redux.svg")} />,
   },
+];
+
+export const contacts = [
+  {
+    icon: <FaPhoneAlt/>,
+    text: "785167617",
+    color: "#43cc08",
+    path: "tel:+48785167617"
+  },
+  {
+    icon: <FaDiscord/>,
+    text: "Bergu#0813",
+    color: "#7289DA",
+    path: "https://discord.com/",
+    target: "_blank"
+  },
+  {
+    icon: <GrMail/>,
+    text: "Bergkacper@gmail.com",
+    color: "#D44638",
+    path: "mailto:bergkacper@gmail.com"
+  }
 ];
 
 export const projects = [

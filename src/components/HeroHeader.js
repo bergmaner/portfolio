@@ -12,7 +12,7 @@ const Header = styled.div`
   margin-top: 52px;
   display: flex;
   @media${breakpoint.md}{
-display: block;
+flex-direction: column;
   }
   > * {
     flex: 1;
@@ -31,9 +31,12 @@ const ImageContainer = styled.div`
 `;
 
 const Paragraph = styled.p`
-text-align: left;
-font-size: 20px;
-padding: 0px 30px;
+  text-align: left;
+  font-size: 20px;
+  padding: 0px 30px;
+  @media${breakpoint.xs}{
+    padding: 0px;
+  }
 `;
 
 const ButtonContainer = styled.div`
@@ -43,26 +46,29 @@ margin-top: 20px;
 @media${breakpoint.md}{
 justify-content: space-around;
 }
+@media${breakpoint.xs}{
+  flex-direction: column;
+  align-items: center;
+  margin: 0px;
+  }
 `;
 
 const HeroHeader = () => {
   return (
     <Header id="about">
+      <div>
         <div>
-          <div>
-            <h1>Kacper Berg</h1>
-            <Paragraph>
-              {translate("my_description")}
-            </Paragraph>
-            <ButtonContainer>
-              <Button>{translate("button_contact")}</Button>
-              <Button>{translate("button_github")}</Button>
-            </ButtonContainer>
-          </div>
+          <h1>Kacper Berg</h1>
+          <Paragraph>{translate("my_description")}</Paragraph>
+          <ButtonContainer>
+            <Button>{translate("button_contact")}</Button>
+            <Button>{translate("button_github")}</Button>
+          </ButtonContainer>
         </div>
-        <ImageContainer>
-          <img alt="" src={require("../assets/images/avatar.svg")}></img>
-        </ImageContainer>
+      </div>
+      <ImageContainer>
+        <img alt="" src={require("../assets/images/avatar.svg")}></img>
+      </ImageContainer>
     </Header>
   );
 };
