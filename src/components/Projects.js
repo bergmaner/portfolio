@@ -1,4 +1,5 @@
 import React from "react";
+import Zoom from "react-reveal/Zoom";
 import styled from "styled-components";
 import ProjectCard from "./ProjectCard";
 import translate from "../providers/i18n/translate";
@@ -40,10 +41,12 @@ const CardsContainer = styled.div`
 const Projects = () => {
   return (
     <Container id="projects">
+      <Zoom>
       <Header>{translate("projects_header")}</Header>
       <CardsContainer>
        {projects.map((project,id)=><ProjectCard key={id} title={project.title} description={project?.description} path={project.image}/>)}
       </CardsContainer>
+      </Zoom>
     </Container>
   );
 };

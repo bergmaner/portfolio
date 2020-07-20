@@ -1,4 +1,5 @@
 import React from "react";
+import Zoom from "react-reveal/Zoom";
 import styled from "styled-components";
 import ContactForms from "./ContactForms";
 import { breakpoint } from "../helpers/mediaQueries";
@@ -42,6 +43,7 @@ const ImageContainer = styled.div`
 const Contact = () => {
   return (
     <Container id="contact">
+        <Zoom>
       <Information>
         <h1>{translate("contact_header")}</h1>{" "}
   <Paragraph>{translate("contact_description")}</Paragraph>
@@ -50,6 +52,7 @@ const Contact = () => {
       <ImageContainer>
         <Image src={require("../assets/images/contact.svg")} />
       </ImageContainer>
+      </Zoom>
     </Container>
   );
 };

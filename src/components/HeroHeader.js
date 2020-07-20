@@ -1,4 +1,5 @@
 import React from "react";
+import Zoom from "react-reveal/Zoom";
 import styled from "styled-components";
 import Button from "./Button";
 import translate from "../providers/i18n/translate";
@@ -56,19 +57,21 @@ justify-content: space-around;
 const HeroHeader = () => {
   return (
     <Header id="about">
-      <div>
+      <Zoom>
         <div>
-          <h1>Kacper Berg</h1>
-          <Paragraph>{translate("my_description")}</Paragraph>
-          <ButtonContainer>
-            <Button>{translate("button_contact")}</Button>
-            <Button>{translate("button_github")}</Button>
-          </ButtonContainer>
+          <div>
+            <h1>Kacper Berg</h1>
+            <Paragraph>{translate("my_description")}</Paragraph>
+            <ButtonContainer>
+              <Button>{translate("button_contact")}</Button>
+              <Button>{translate("button_github")}</Button>
+            </ButtonContainer>
+          </div>
         </div>
-      </div>
-      <ImageContainer>
-        <img alt="" src={require("../assets/images/avatar.svg")}></img>
-      </ImageContainer>
+        <ImageContainer>
+          <img alt="" src={require("../assets/images/avatar.svg")}></img>
+        </ImageContainer>
+      </Zoom>
     </Header>
   );
 };
