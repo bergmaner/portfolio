@@ -33,7 +33,7 @@ const CardsContainer = styled.div`
 
 const Projects = () => {
   return (
-    <Container>
+    <Container id="projects">
       <Header>{translate("projects_header")}</Header>
       <CardsContainer>
        {projects.map((project,id)=><ProjectCard key={id} title={project.title} description={project?.description} path={project.image}/>)}

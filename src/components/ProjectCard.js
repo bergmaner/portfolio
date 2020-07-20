@@ -49,18 +49,17 @@ const Card = styled.div`
     transform: translate(-75px, calc(50% - 37px));
     transition: 0.5s ease-in-out;
   }
-  @media${breakpoint.md}{
-    :hover ${ImageContainer} {
-    width: 100%;
-    transform:translate(0,0);
-    }
-  }
   @media${breakpoint.lg}{
     width: 400px;
   }
   @media${breakpoint.md}{
     max-width: 300px;
     flex-direction:column;
+    :hover ${ImageContainer} {
+      height: auto;
+      width: 100%;
+      transform:translate(0,0);
+      }
   }
 `;
 
@@ -73,6 +72,7 @@ const Content = styled.div`
   padding: 10px 20px;
   display: flex;
   justify-content: center;
+  align-items: center;
   h3 {
     margin-top: 0px;
     margin-bottom: 5px;
@@ -84,7 +84,7 @@ const Content = styled.div`
     margin: 5px 0px;
   }
   @media${breakpoint.md}{
-    height:300px;
+    padding: 25px;
     position: static;
   }
 `;
