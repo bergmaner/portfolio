@@ -45,9 +45,7 @@ li a{
     color: black;
     text-decoration: none;
     border-radius: 20px;
-    @media${breakpoint.md}{
-      font-size: 18px;
-    }
+    font-size: 18px;
   }
   li a:hover{
   background-color: #f3f3f3;

@@ -104,20 +104,28 @@ export const projects = [
     title: "LearnEnglish",
     description: "learnEnglish_description",
     image: require("../assets/images/LearnEnglish.png"),
+    live: "https://bergmaner.github.io/learnenglish/",
+    github: "https://github.com/bergmaner/learnenglish"
   },
   {
     title: "MovieFinder",
     description: "movieFinder_description",
     image: require("../assets/images/MovieFinder.png"),
+    live: "https://bergmaner.github.io/movieFinder/",
+    github: "https://github.com/bergmaner/movieFinder"
   },
   {
     title: "Tetris",
     description: "tetris_description",
     image: require("../assets/images/Tetris.png"),
+    live: "https://bergmaner.github.io/tetris/",
+    github: "https://github.com/bergmaner/tetris"
   },
   {
     title: "Portfolio",
     description: "portfolio_description",
     image: require("../assets/images/Portfolio.png"),
+    live: "https://bergmaner.github.io/portfolio/",
+    github: "https://github.com/bergmaner/portfolio"
   },
 ];

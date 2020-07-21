@@ -94,7 +94,7 @@ const ButtonContainer = styled.div`
   justify-content: center;
 `;
 
-const ProjectCard = ({ title, description, path }) => {
+const ProjectCard = ({ title, description, path, livePath, githubPath }) => {
   return (
     <Card>
       <ImageContainer>
@@ -105,8 +105,8 @@ const ProjectCard = ({ title, description, path }) => {
           <h3>{title}</h3>
           <p>{translate(description)}</p>
           <ButtonContainer>
-            <ProjectButton>Live</ProjectButton>
-            <ProjectButton>Github</ProjectButton>
+            <ProjectButton path={livePath} newTab>Live</ProjectButton>
+            <ProjectButton path={githubPath} newTab>Github</ProjectButton>
           </ButtonContainer>
         </div>
       </Content>

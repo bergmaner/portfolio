@@ -63,8 +63,8 @@ const HeroHeader = () => {
             <h1>Kacper Berg</h1>
             <Paragraph>{translate("my_description")}</Paragraph>
             <ButtonContainer>
-              <Button>{translate("button_contact")}</Button>
-              <Button>{translate("button_github")}</Button>
+              <Button path="#contact">{translate("button_contact")}</Button>
+              <Button path="https://github.com/bergmaner" newTab>{translate("button_github")}</Button>
             </ButtonContainer>
           </div>
         </div>

@@ -42,10 +42,19 @@ const Projects = () => {
   return (
     <Container id="projects">
       <Zoom>
-      <Header>{translate("projects_header")}</Header>
-      <CardsContainer>
-       {projects.map((project,id)=><ProjectCard key={id} title={project.title} description={project?.description} path={project.image}/>)}
-      </CardsContainer>
+        <Header>{translate("projects_header")}</Header>
+        <CardsContainer>
+          {projects.map((project, id) => (
+            <ProjectCard
+              key={id}
+              title={project.title}
+              description={project?.description}
+              path={project.image}
+              livePath={project.live}
+              githubPath={project.github}
+            />
+          ))}
+        </CardsContainer>
       </Zoom>
     </Container>
   );

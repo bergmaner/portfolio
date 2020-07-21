@@ -35,6 +35,7 @@ const Paragraph = styled.p`
 `;
 
 const ImageContainer = styled.div`
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,15 +44,15 @@ const ImageContainer = styled.div`
 const Contact = () => {
   return (
     <Container id="contact">
-        <Zoom>
-      <Information>
-        <h1>{translate("contact_header")}</h1>{" "}
-  <Paragraph>{translate("contact_description")}</Paragraph>
-        <ContactForms />
-      </Information>
-      <ImageContainer>
-        <Image src={require("../assets/images/contact.svg")} />
-      </ImageContainer>
+      <Zoom>
+        <Information>
+          <h1>{translate("contact_header")}</h1>{" "}
+          <Paragraph>{translate("contact_description")}</Paragraph>
+          <ContactForms />
+        </Information>
+        <ImageContainer>
+          <Image src={require("../assets/images/contact.svg")} />
+        </ImageContainer>
       </Zoom>
     </Container>
   );
