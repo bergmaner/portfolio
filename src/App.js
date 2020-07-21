@@ -8,6 +8,7 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import TopArrow from "./components/TopArrow";
 import Ubuntu from './fonts/Ubuntu-Italic.ttf';
 import Megrim from './fonts/Megrim-Regular.ttf';
 
@@ -29,7 +30,7 @@ body {
 html{
   scroll-behavior: smooth;
 }
-`
+`;
 
 const Content = styled.div`
 text-align: center;
@@ -47,6 +48,7 @@ const App = () => {
         <Skills/>
         <Projects/>
         <Contact/>
+        <TopArrow/>
         <Footer/>
       </Content>
     </I18nProvider>

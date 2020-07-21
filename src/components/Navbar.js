@@ -46,7 +46,7 @@ li a{
     text-decoration: none;
     border-radius: 20px;
     @media${breakpoint.md}{
-      padding: 20px;
+      font-size: 18px;
     }
   }
   li a:hover{
