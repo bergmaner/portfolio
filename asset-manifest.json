@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.160408fe.chunk.css",
-    "main.js": "/portfolio/static/js/main.67348208.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.67348208.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.f4662173.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.f4662173.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
-    "static/js/2.e3f28a34.chunk.js": "/portfolio/static/js/2.e3f28a34.chunk.js",
-    "static/js/2.e3f28a34.chunk.js.map": "/portfolio/static/js/2.e3f28a34.chunk.js.map",
+    "static/js/2.c96a3ef9.chunk.js": "/portfolio/static/js/2.c96a3ef9.chunk.js",
+    "static/js/2.c96a3ef9.chunk.js.map": "/portfolio/static/js/2.c96a3ef9.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.ba5f3deced6d89607dcfa6a92cd2c0c5.js": "/portfolio/precache-manifest.ba5f3deced6d89607dcfa6a92cd2c0c5.js",
+    "precache-manifest.5c0c969a70e21f0ab5305faea21d8d22.js": "/portfolio/precache-manifest.5c0c969a70e21f0ab5305faea21d8d22.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.160408fe.chunk.css.map": "/portfolio/static/css/main.160408fe.chunk.css.map",
-    "static/js/2.e3f28a34.chunk.js.LICENSE.txt": "/portfolio/static/js/2.e3f28a34.chunk.js.LICENSE.txt",
+    "static/js/2.c96a3ef9.chunk.js.LICENSE.txt": "/portfolio/static/js/2.c96a3ef9.chunk.js.LICENSE.txt",
     "static/media/LearnEnglish.png": "/portfolio/static/media/LearnEnglish.24142243.png",
+    "static/media/Megrim-Regular.ttf": "/portfolio/static/media/Megrim-Regular.f0ddc91a.ttf",
     "static/media/MovieFinder.png": "/portfolio/static/media/MovieFinder.0bf44e8a.png",
     "static/media/Portfolio.png": "/portfolio/static/media/Portfolio.f5a80f48.png",
     "static/media/Tetris.png": "/portfolio/static/media/Tetris.ef40f46e.png",
+    "static/media/Ubuntu-Italic.ttf": "/portfolio/static/media/Ubuntu-Italic.4b96047e.ttf",
     "static/media/avatar.svg": "/portfolio/static/media/avatar.04cff595.svg",
+    "static/media/contact.svg": "/portfolio/static/media/contact.c7e50416.svg",
     "static/media/firebase.svg": "/portfolio/static/media/firebase.bfa69c4f.svg",
     "static/media/redux.svg": "/portfolio/static/media/redux.aa0a3376.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.209c2d7e.js",
-    "static/js/2.e3f28a34.chunk.js",
-    "static/css/main.160408fe.chunk.css",
-    "static/js/main.67348208.chunk.js"
+    "static/js/2.c96a3ef9.chunk.js",
+    "static/js/main.f4662173.chunk.js"
   ]
 }
