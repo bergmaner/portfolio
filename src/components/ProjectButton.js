@@ -1,10 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import { ButtonColor } from "../helpers/theme";
 import { breakpoint } from "../helpers/mediaQueries";
 
 const MainButton = styled.a`
-background-color: ${props => props.primary};
+background-color: ${props => props.theme.button};
 color: white;
 font-weight: 700;
 width: max-content;
@@ -26,7 +25,7 @@ transition: all .3s ease-in-out 0s;
 const ProjectButton = ({ children, path, newTab }) => {
   return (
     <div>
-      <MainButton primary = {ButtonColor} href={path} target={newTab && "_blank"}>
+      <MainButton href={path} target={newTab && "_blank"}>
         {children}
       </MainButton>
     </div>

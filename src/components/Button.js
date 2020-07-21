@@ -1,12 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import { ButtonColor } from "../helpers/theme";
 import { breakpoint } from "../helpers/mediaQueries";
 
 const MainButton = styled.a`
-background-color: #ffffff;
-border: solid 1px ${props => props.primary};
-color: black;
+border: solid 1px ${props => props.theme.button};
+color: ${props => props.theme.color};
 font-weight: 700;
 width: max-content;
 padding: 13px 22px;
@@ -31,7 +29,7 @@ transition: all .3s ease-in-out 0s;
     padding: 9px 12px;
 }
 :hover{
-    background-color: ${props => props.primary};
+    background-color: ${props => props.theme.button};
     color: white;
 }
 `;
@@ -39,7 +37,7 @@ transition: all .3s ease-in-out 0s;
 const Button = ({ children, path, newTab }) => {
   return (
     <div>
-      <MainButton primary = {ButtonColor} href={path} target={newTab && "_blank"}>
+      <MainButton href={path} target={newTab && "_blank"}>
         {children}
       </MainButton>
     </div>

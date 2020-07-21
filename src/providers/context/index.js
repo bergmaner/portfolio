@@ -5,8 +5,10 @@ const AppContext = createContext();
 
 let reducer = (state, action) => {
   switch (action.type) {
-    case "SETLANG":
+    case "SET_LANG":
       return { ...state, lang: action.payload };
+      case "SET_THEME":
+        return { ...state, theme: action.payload };
   }
 };
 

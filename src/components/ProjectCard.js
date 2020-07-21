@@ -37,7 +37,7 @@ const Image = styled.img`
 const Card = styled.div`
   position: relative;
   min-height: 205px;
-  background: #f3f3f3;
+  background: ${props => props.theme.cardColor};
   display: flex;
   justify-content: center;
   align-items: center;

@@ -11,8 +11,8 @@ const Language = styled.span`
   padding: 5px;
   transition: transform 0.4s ease;
   text-transform: uppercase;
-  background: ${props=>props.active ? "#000" : "transparent"};
-  color: ${props=>props.active ? "#fff" : "#000"};
+  background: ${props=>props.active ? props.theme.color : "transparent"};
+  color: ${props=>props.active ? props.theme.contrastColor : props.theme.color};
   border-radius: ${props=>props.active ? "20px" : "0px"};
   cursor: ${props=>props.active ? "default" : "pointer"};
 `;
@@ -22,10 +22,10 @@ const LanguageSwitcher = () => {
   console.log("loacales",LOCALES);
   return (
     <Switcher>
-      <Language active={state.lang === "pl"} onClick={() => dispatch({ type: "SETLANG", payload: "pl" })}>
+      <Language active={state.lang === "pl"} onClick={() => dispatch({ type: "SET_LANG", payload: "pl" })}>
         pl
       </Language>
-      /<Language active={state.lang === "en"} onClick={() => dispatch({ type: "SETLANG", payload: "en" })}>en</Language>
+      /<Language active={state.lang === "en"} onClick={() => dispatch({ type: "SET_LANG", payload: "en" })}>en</Language>
     </Switcher>
   );
 };

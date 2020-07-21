@@ -7,11 +7,11 @@ import { menuOptions } from "../helpers/config";
 import { breakpoint } from "../helpers/mediaQueries";
 
 const Navbar = styled.header`
+  background: ${(props) => props.theme.contrastColor};
   position: fixed;
   z-index: 2;
   box-sizing: border-box;
   width: 100%;
-  background-color: #fff;
   max-width: 100%;
   padding: 10px 20px;
   margin: 0px auto;
@@ -26,11 +26,11 @@ list-style: none;
 overflow: hidden;
 display: flex;
 justify-content: flex-end;
-background: #fff;
 @media${breakpoint.md}{
   flex-direction: column;
   width: 200px;
   position: fixed;
+  background: ${props => props.theme.contrastColor};
   justify-content: flex-start;
   transform: ${(props) => (props.open ? "translateX(0)" : "translateX(100%)")};
   top: 0px;
@@ -42,20 +42,22 @@ background: #fff;
 li a{
     display: block;
     padding: 10px;
-    color: black;
+    color: ${(props) => props.theme.color};
     text-decoration: none;
     border-radius: 20px;
     font-size: 18px;
   }
   li a:hover{
-  background-color: #f3f3f3;
+  background-color: ${props => props.theme.color};
+  color: ${(props) => props.theme.contrastColor};
   }
 `;
 
 const Logo = styled.a`
   display: inline-block;
-  color: #000;
   font-size: 1.5em;
+  color: ${(props) => props.theme.color};
+  padding: 10px;
   text-decoration: none;
 `;
 
@@ -71,7 +73,7 @@ const Header = () => {
             <a href={item.content}>{translate(item.content)}</a>
           </li>
         ))}
-        <LanguageSwitcher/>
+        <LanguageSwitcher />
       </Menu>
     </Navbar>
   );
