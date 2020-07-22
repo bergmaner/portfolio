@@ -2,14 +2,13 @@ import React, { useContext } from "react";
 import styled from "styled-components";
 import THEMES from "../providers/themes/themeList";
 import { AppContext } from "../providers/context";
-import { breakpoint } from "../helpers/mediaQueries";
 
 const SwitchWrapper = styled.div`
   position: relative;
   margin: 7.5px 0px;
   display:inline-block;
   width: 43px;
-  @media${breakpoint.md}{
+  @media${(props) => props.theme.breakpoint.md}{
     transform: translateX(80px);
   }
 

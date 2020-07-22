@@ -4,12 +4,11 @@ import styled from "styled-components";
 import ProjectCard from "./ProjectCard";
 import translate from "../providers/i18n/translate";
 import { projects } from "../helpers/config";
-import { breakpoint } from "../helpers/mediaQueries";
 
 const Container = styled.div`
 padding: 40px 20px;
 border-bottom: #F3F3F3 3px solid;
-@media${breakpoint.xs}{
+@media${(props) => props.theme.breakpoint.xs}{
   padding: 40px 0px;
 }
 `;
@@ -18,7 +17,7 @@ const Header = styled.h1`
   font-size: 56px;
   font-weight: 400;
   margin-top: 0px;
-  @media${breakpoint.sm}{
+  @media${(props) => props.theme.breakpoint.sm}{
     font-size: 30px;
   }
 `;
@@ -31,7 +30,7 @@ const CardsContainer = styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
   transition: all 0.5s ease-in-out;
-  @media${breakpoint.lg}{
+  @media${(props) => props.theme.breakpoint.lg}{
     width: 100%;
     flex-direction: column;
     align-items: center;

@@ -5,8 +5,6 @@ import LanguageSwitcher from "./LanguageSwitcher";
 import Switch from "./Switch";
 import translate from "../providers/i18n/translate";
 import { menuOptions } from "../helpers/config";
-import { breakpoint } from "../helpers/mediaQueries";
-
 
 const Navbar = styled.header`
   background: ${(props) => props.theme.contrastColor};
@@ -28,11 +26,11 @@ list-style: none;
 overflow: hidden;
 display: flex;
 justify-content: flex-end;
-@media${breakpoint.md}{
+@media${(props) => props.theme.breakpoint.md}{
   flex-direction: column;
   width: 200px;
   position: fixed;
-  background: ${props => props.theme.contrastColor};
+  background: ${(props) => props.theme.contrastColor};
   justify-content: flex-start;
   transform: ${(props) => (props.open ? "translateX(0)" : "translateX(100%)")};
   top: 0px;
@@ -50,7 +48,7 @@ li a{
     font-size: 18px;
   }
   li a:hover{
-  background-color: ${props => props.theme.color};
+  background-color: ${(props) => props.theme.color};
   color: ${(props) => props.theme.contrastColor};
   }
 `;
@@ -76,7 +74,7 @@ const Header = () => {
           </li>
         ))}
         <LanguageSwitcher />
-        <Switch/>
+        <Switch />
       </Menu>
     </Navbar>
   );

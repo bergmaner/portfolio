@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { breakpoint } from "../helpers/mediaQueries";
+
 const Burger = styled.button`
   position: absolute;
   top: 15px;
@@ -16,7 +16,7 @@ const Burger = styled.button`
   cursor: pointer;
   padding: 0;
   z-index: 10;
-@media${breakpoint.md}{
+@media${(props) => props.theme.breakpoint.md}{
 display: flex;
 }
   &:focus {

@@ -2,7 +2,6 @@ import React from "react";
 import Zoom from "react-reveal/Zoom";
 import styled from "styled-components";
 import ContactForms from "./ContactForms";
-import { breakpoint } from "../helpers/mediaQueries";
 import translate from "../providers/i18n/translate";
 
 const Container = styled.div`
@@ -10,7 +9,7 @@ const Container = styled.div`
   box-sizing: border-box;
   width: 100%;
   display: flex;
-  @media${breakpoint.sm}{
+  @media${(props) => props.theme.breakpoint.sm}{
       flex-direction: column;
   }
 `;
@@ -28,7 +27,7 @@ const Paragraph = styled.p`
   text-align: left;
   font-size: 20px;
   padding: 0px 30px;
-  @media${breakpoint.sm}{
+  @media${(props) => props.theme.breakpoint.sm}{
       font-size: 18px;
       padding: 0px;
   }

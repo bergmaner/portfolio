@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import translate from "../providers/i18n/translate";
 import ProjectButton from "./ProjectButton";
-import { breakpoint } from "../helpers/mediaQueries";
 
 const ImageContainer = styled.div`
   position: absolute;
@@ -16,7 +15,7 @@ const ImageContainer = styled.div`
   align-items: center;
   overflow: hidden;
   transition: all 0.5s ease-in-out;
- @media${breakpoint.md}{
+ @media${(props) => props.theme.breakpoint.md}{
    width: 100%;
    position: relative;
    transform: translateX(0);
@@ -28,7 +27,7 @@ const Image = styled.img`
   width: 100%;
   position: absolute;
   top: 0px;
-  @media${breakpoint.md}{
+  @media${(props) => props.theme.breakpoint.md}{
     position: static;
   }
 
@@ -37,7 +36,7 @@ const Image = styled.img`
 const Card = styled.div`
   position: relative;
   min-height: 205px;
-  background: ${props => props.theme.cardColor};
+  background: ${(props) => props.theme.cardColor};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,10 +48,10 @@ const Card = styled.div`
     transform: translate(-75px, calc(50% - 37px));
     transition: 0.5s ease-in-out;
   }
-  @media${breakpoint.lg}{
+  @media${(props) => props.theme.breakpoint.lg}{
     width: 400px;
   }
-  @media${breakpoint.md}{
+  @media${(props) => props.theme.breakpoint.md}{
     max-width: 300px;
     flex-direction:column;
     :hover ${ImageContainer} {
@@ -83,7 +82,7 @@ const Content = styled.div`
     font-size: 14px;
     margin: 5px 0px;
   }
-  @media${breakpoint.md}{
+  @media${(props) => props.theme.breakpoint.md}{
     padding: 25px;
     position: static;
   }
@@ -105,8 +104,12 @@ const ProjectCard = ({ title, description, path, livePath, githubPath }) => {
           <h3>{title}</h3>
           <p>{translate(description)}</p>
           <ButtonContainer>
-            <ProjectButton path={livePath} newTab>Live</ProjectButton>
-            <ProjectButton path={githubPath} newTab>Github</ProjectButton>
+            <ProjectButton path={livePath} newTab>
+              Live
+            </ProjectButton>
+            <ProjectButton path={githubPath} newTab>
+              Github
+            </ProjectButton>
           </ButtonContainer>
         </div>
       </Content>

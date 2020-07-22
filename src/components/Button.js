@@ -1,10 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import { breakpoint } from "../helpers/mediaQueries";
 
 const MainButton = styled.a`
-border: solid 1px ${props => props.theme.button};
-color: ${props => props.theme.color};
+border: solid 1px ${(props) => props.theme.button};
+color: ${(props) => props.theme.color};
 font-weight: 700;
 width: max-content;
 padding: 13px 22px;
@@ -19,17 +18,17 @@ margin-right: 50px;
 font-size: 12px;
 cursor: pointer;
 transition: all .3s ease-in-out 0s;
-@media${breakpoint.md}{
+@media${(props) => props.theme.breakpoint.md}{
     font-size: 15px;
     padding: 12px 18px;
     margin-right: 0px;
 }
-@media${breakpoint.sm}{
+@media${(props) => props.theme.breakpoint.sm}{
     font-size: 13px;
     padding: 9px 12px;
 }
 :hover{
-    background-color: ${props => props.theme.button};
+    background-color: ${(props) => props.theme.button};
     color: white;
 }
 `;
@@ -42,5 +41,5 @@ const Button = ({ children, path, newTab }) => {
       </MainButton>
     </div>
   );
-}
+};
 export default Button;

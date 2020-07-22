@@ -3,7 +3,6 @@ import Zoom from "react-reveal/Zoom";
 import styled from "styled-components";
 import Button from "./Button";
 import translate from "../providers/i18n/translate";
-import { breakpoint } from "../helpers/mediaQueries";
 
 const Header = styled.div`
   width: 100%;
@@ -12,7 +11,7 @@ const Header = styled.div`
   border-bottom: #F3F3F3 3px solid;
   margin-top: 52px;
   display: flex;
-  @media${breakpoint.md}{
+  @media${(props) => props.theme.breakpoint.md}{
 flex-direction: column;
   }
   > * {
@@ -35,7 +34,7 @@ const Paragraph = styled.p`
   text-align: left;
   font-size: 20px;
   padding: 0px 30px;
-  @media${breakpoint.xs}{
+  @media${(props) => props.theme.breakpoint.xs}{
     padding: 0px;
   }
 `;
@@ -44,10 +43,10 @@ const ButtonContainer = styled.div`
 display: flex;
 justify-content: center;
 margin-top: 20px;
-@media${breakpoint.md}{
+@media${(props) => props.theme.breakpoint.md}{
 justify-content: space-around;
 }
-@media${breakpoint.xs}{
+@media${(props) => props.theme.breakpoint.xs}{
   flex-direction: column;
   align-items: center;
   margin: 0px;
@@ -64,7 +63,9 @@ const HeroHeader = () => {
             <Paragraph>{translate("my_description")}</Paragraph>
             <ButtonContainer>
               <Button path="#contact">{translate("button_contact")}</Button>
-              <Button path="https://github.com/bergmaner" newTab>{translate("button_github")}</Button>
+              <Button path="https://github.com/bergmaner" newTab>
+                {translate("button_github")}
+              </Button>
             </ButtonContainer>
           </div>
         </div>

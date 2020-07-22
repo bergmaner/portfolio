@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { contacts } from "../helpers/config";
-import { breakpoint } from "../helpers/mediaQueries";
 
 const ContactForm = styled.div`
   transition: all 0.4s ease;
@@ -14,7 +13,7 @@ const ContactForm = styled.div`
     font-size: 30px;
   }
   :hover {
-    background: ${props => props.color};
+    background: ${(props) => props.color};
     color: #fff;
   }
 `;
@@ -28,7 +27,7 @@ const ContactContainer = styled.div`
 const Text = styled.div`
   font-size: 20px;
   margin-left: 5px;
-  @media${breakpoint.xs}{
+  @media${(props) => props.theme.breakpoint.xs}{
       font-size: 14px;
   }
 `;
@@ -38,7 +37,9 @@ const ContactForms = () => {
     <div>
       {contacts.map((contact) => (
         <ContactContainer style={{ margin: "5px" }}>
-          <a target={contact.target} href={contact.path}><ContactForm color={contact.color}>{contact.icon}</ContactForm></a>
+          <a target={contact.target} href={contact.path}>
+            <ContactForm color={contact.color}>{contact.icon}</ContactForm>
+          </a>
           <Text>{contact.text}</Text>
         </ContactContainer>
       ))}

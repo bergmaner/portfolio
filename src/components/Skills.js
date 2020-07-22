@@ -3,13 +3,12 @@ import Zoom from "react-reveal/Zoom";
 import styled from "styled-components";
 import translate from "../providers/i18n/translate";
 import { skills } from "../helpers/config";
-import { breakpoint } from "../helpers/mediaQueries";
 
 const Header = styled.h1`
   font-size: 56px;
   font-weight: 400;
   margin-top: 0px;
-  @media${breakpoint.sm}{
+  @media${(props) => props.theme.breakpoint.sm}{
     font-size: 30px;
   }
 `;
