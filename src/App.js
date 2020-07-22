@@ -3,7 +3,6 @@ import styled, { createGlobalStyle } from "styled-components";
 import { I18nProvider } from "./providers/i18n";
 import { ThemeProvider } from "styled-components";
 import { getTheme } from "./providers/themes/getTheme";
-import THEMES from "./providers/themes/themeList";
 import { AppContext } from "./providers/context";
 import Navbar from "./components/Navbar";
 import HeroHeader from "./components/HeroHeader";

@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Hamburger from "./Hamburger";
 import LanguageSwitcher from "./LanguageSwitcher";
+import Switch from "./Switch";
 import translate from "../providers/i18n/translate";
 import { menuOptions } from "../helpers/config";
 import { breakpoint } from "../helpers/mediaQueries";
+
 
 const Navbar = styled.header`
   background: ${(props) => props.theme.contrastColor};
@@ -74,6 +76,7 @@ const Header = () => {
           </li>
         ))}
         <LanguageSwitcher />
+        <Switch/>
       </Menu>
     </Navbar>
   );
