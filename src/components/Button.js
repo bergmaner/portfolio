@@ -15,9 +15,12 @@ text-decoration: none;
 display: block;
 margin-top: 20px;
 margin-right: 50px;
-font-size: 12px;
 cursor: pointer;
+font-size: 18px;
 transition: all .3s ease-in-out 0s;
+@media${(props) => props.theme.breakpoint.lg}{
+  font-size: 16px;
+}
 @media${(props) => props.theme.breakpoint.md}{
     font-size: 15px;
     padding: 12px 18px;

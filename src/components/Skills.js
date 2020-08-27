@@ -1,5 +1,5 @@
 import React from "react";
-import Zoom from "react-reveal/Zoom";
+import Slide from "react-reveal/Slide";
 import styled from "styled-components";
 import translate from "../providers/i18n/translate";
 import { skills } from "../helpers/config";
@@ -48,7 +48,7 @@ const Container = styled.div`
 const Skills = () => {
   return (
     <Container id="skills">
-      <Zoom>
+      <Slide left>
         <Header>{translate("skills_header")}</Header>
         <Describe>{translate("skills_description")}</Describe>
         <div>
@@ -63,7 +63,7 @@ const Skills = () => {
             ))}
           </SkillsIcons>
         </div>
-      </Zoom>
+      </Slide>
     </Container>
   );
 };

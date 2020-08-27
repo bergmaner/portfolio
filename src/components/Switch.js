@@ -57,12 +57,19 @@ const SwitchBox = styled.input`
   }
 `;
 
+const Image = styled.img`
+height: 25px;
+align-self: center;
+transform: translateY(-4px);
+`
+
 const Switch = () => {
   const { state, dispatch } = useContext(AppContext);
   const setTheme = (theme) => {
     dispatch({ type: "SET_THEME", payload: theme });
   };
   return (
+    <>
     <SwitchWrapper>
       <SwitchBox
         onChange={
@@ -74,6 +81,8 @@ const Switch = () => {
       />
       <SwitchLabel />
     </SwitchWrapper>
+     <Image src={state.theme === THEMES.LIGHT ? require("../assets/images/light.svg") : require("../assets/images/dark.svg") }/>
+    </>
   );
 };
 

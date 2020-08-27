@@ -1,5 +1,5 @@
 import React from "react";
-import Zoom from "react-reveal/Zoom";
+import Slide from "react-reveal/Slide";
 import styled from "styled-components";
 import Button from "./Button";
 import translate from "../providers/i18n/translate";
@@ -32,8 +32,11 @@ const ImageContainer = styled.div`
 
 const Paragraph = styled.p`
   text-align: left;
-  font-size: 20px;
+  font-size: 24px;
   padding: 0px 30px;
+  @media${(props) => props.theme.breakpoint.lg}{
+    font-size: 20px;
+  }
   @media${(props) => props.theme.breakpoint.xs}{
     padding: 0px;
   }
@@ -56,8 +59,8 @@ justify-content: space-around;
 const HeroHeader = () => {
   return (
     <Header id="about">
-      <Zoom>
         <div>
+        <Slide left>
           <div>
             <h1>Kacper Berg</h1>
             <Paragraph>{translate("my_description")}</Paragraph>
@@ -68,11 +71,14 @@ const HeroHeader = () => {
               </Button>
             </ButtonContainer>
           </div>
+          </Slide>
         </div>
+        <Slide right>
         <ImageContainer>
           <img alt="" src={require("../assets/images/avatar.svg")}></img>
         </ImageContainer>
-      </Zoom>
+        </Slide>
+
     </Header>
   );
 };

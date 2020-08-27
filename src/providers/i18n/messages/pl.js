@@ -6,7 +6,7 @@ export default {
       "movieFinder_description" : "Jest to strona internetowa pozwalająca na wyszukiwanie informacji o filmach i osobami związanymi z ich produkcją.Do tworzenia aplikacji wykorzystałem Reacta i oparłem to na hookach.Korzystałem także z ogólnodostępnego tmdbAPI.",
       "tetris_description" : "Jest to moja wersja kultowej gry Tetris. Gra jest wykonana za pomocą hooków.Strona nie jest responsywna.",
       "portfolio_description" : "Moje Portfolio zostało wykonane w Reactcie za pomocą hooków ",
-      "my_description" : "Mam 21 lat mieszkam w Boguchwałowicach małej wiosce blisko Katowic. Jestem studentem 3 roku informatyki o specjalizacji aplikacje mobilne i webowe aspiruje na stanowisko Frontend Developera. Jestem samoukiem, ciągle rozwijajam swoję pasję. Obecnie pracuję nad stroną sklepu internetowego z możliwością stworzenia własnego designu ubrań i nad grą w unity na telefony. Są to projekty relaizowane w własnym zakresie. ",
+      "my_description" : "Mam 21 lat mieszkam w Boguchwałowicach małej wiosce blisko Katowic. Jestem studentem 3 roku informatyki o specjalizacji aplikacje mobilne i webowe aspiruje na stanowisko Frontend Developera. Jestem samoukiem, ciągle rozwijajam swoję pasję. Obecnie pracuję nad stroną sklepu internetowego z możliwością stworzenia własnego designu ubrań i nad grą w unity na telefony. Są to projekty realizowane we własnym zakresie. ",
       "skills_description" : "Stack technologiczny, który obecnie poznałem",
       "contact_description" : "Obecnie szukam pierwszej pracy lub praktyki w zawodzie, jeśli spodobały ci się moje projekty zapraszam do kontaktu.",
       "#about" : "O mnie", 

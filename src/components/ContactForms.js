@@ -5,7 +5,7 @@ import { contacts } from "../helpers/config";
 const ContactForm = styled.div`
   transition: all 0.4s ease;
   display: inline-block;
-  padding: 10px;
+  padding: 10px 11px;
   border-radius: 100%;
   background: #ddd;
   color: #555;
