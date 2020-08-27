@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/portfolio/static/js/main.a14179fa.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.a14179fa.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.a9397929.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.a9397929.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
-    "static/js/2.663d658a.chunk.js": "/portfolio/static/js/2.663d658a.chunk.js",
-    "static/js/2.663d658a.chunk.js.map": "/portfolio/static/js/2.663d658a.chunk.js.map",
+    "static/js/2.090981a3.chunk.js": "/portfolio/static/js/2.090981a3.chunk.js",
+    "static/js/2.090981a3.chunk.js.map": "/portfolio/static/js/2.090981a3.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.a1b50363347e97dd0b0ef22d7d3041c5.js": "/portfolio/precache-manifest.a1b50363347e97dd0b0ef22d7d3041c5.js",
+    "precache-manifest.b913a9cb48c176fee5a838ff40450541.js": "/portfolio/precache-manifest.b913a9cb48c176fee5a838ff40450541.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/js/2.663d658a.chunk.js.LICENSE.txt": "/portfolio/static/js/2.663d658a.chunk.js.LICENSE.txt",
+    "static/js/2.090981a3.chunk.js.LICENSE.txt": "/portfolio/static/js/2.090981a3.chunk.js.LICENSE.txt",
     "static/media/LearnEnglish.png": "/portfolio/static/media/LearnEnglish.24142243.png",
     "static/media/Megrim-Regular.ttf": "/portfolio/static/media/Megrim-Regular.f0ddc91a.ttf",
     "static/media/MovieFinder.png": "/portfolio/static/media/MovieFinder.0bf44e8a.png",
@@ -18,12 +18,14 @@
     "static/media/Ubuntu-Italic.ttf": "/portfolio/static/media/Ubuntu-Italic.4b96047e.ttf",
     "static/media/avatar.svg": "/portfolio/static/media/avatar.04cff595.svg",
     "static/media/contact.svg": "/portfolio/static/media/contact.c7e50416.svg",
+    "static/media/dark.svg": "/portfolio/static/media/dark.00d78271.svg",
     "static/media/firebase.svg": "/portfolio/static/media/firebase.bfa69c4f.svg",
+    "static/media/light.svg": "/portfolio/static/media/light.4a87b7ed.svg",
     "static/media/redux.svg": "/portfolio/static/media/redux.aa0a3376.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.209c2d7e.js",
-    "static/js/2.663d658a.chunk.js",
-    "static/js/main.a14179fa.chunk.js"
+    "static/js/2.090981a3.chunk.js",
+    "static/js/main.a9397929.chunk.js"
   ]
 }
